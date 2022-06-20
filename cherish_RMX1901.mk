@@ -8,6 +8,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit Pixel Launcher By TeamFiles
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+
 # Inherit some common CherishOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
