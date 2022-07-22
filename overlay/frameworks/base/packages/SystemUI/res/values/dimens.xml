@@ -32,6 +32,8 @@
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">25dp</dimen>
 
+    <dimen name="fod_animation_offset">20px</dimen>
+
     <!-- Location of physical power button -->
     <dimen name="physical_power_button_center_screen_location_y">1000px</dimen>
 
