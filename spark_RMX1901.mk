@@ -8,37 +8,36 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit Pixel Launcher By TeamFiles
-$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
-# Inherit some common Evolution-X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common spark-X stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := true
-EXTRA_UDFPS_ANIMATIONS := true
-
+WITH_FOD_ANIMATIONS := true
+TARGET_USES_BLUR := true
+WITH_GAPPS := false
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := evolution_RMX1901
+PRODUCT_NAME := spark_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220605.009.B1 8650216 release-keys" \
+    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.003.A1 8672226 release-keys" \
     PRODUCT_NAME="RMX1901"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220705.003.A1/8672226:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)

@@ -51,6 +51,8 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-ne
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm710
+PRODUCT_BOARD_PLATFORM := sdm710
+PRODUCT_USES_QCOM_HARDWARE := true
 
 # Assertion
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
