@@ -20,6 +20,9 @@ TARGET_SUPPORTS_QUICK_TAP := true
 WITH_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 WITH_GAPPS := false
+TARGET_WANTS_FOD_ANIMATIONS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
