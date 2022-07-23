@@ -10,10 +10,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 
 # Inherit some common spark-X stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+
+# maintainer flag (one word only/no spacing)
+RICE_MAINTAINER := HimJT
+
+# chipset flag (one word only/no spacing)
+RICE_CHIPSET := sdm710
+
+# gapps build flag, if not defined build type is vanilla
+WITH_GMS := true
+
+# Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
+SUSHI_BOOTANIMATION := 1080
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true
+
 
 TARGET_BOOT_ANIMATION_RES := 1080
-EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -29,7 +48,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := spark_RMX1901
+PRODUCT_NAME := lineage_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo

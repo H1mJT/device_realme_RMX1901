@@ -1,7 +1,6 @@
 # App Launch Blur
 ro.launcher.blur.appLaunch=false
 
-ro.spark.maintainer=HimJT
 
 # LMKD
 ro.lmk.low=1001
