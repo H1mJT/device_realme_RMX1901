@@ -13,4 +13,4 @@ git clone --depth=1 https://gitlab.com/dakkshesh07/neutron-clang.git -b Neutron-
 
 echo 'Patching Realme In-Screen Proximity [4/4]'
 # Realme In-Screen Proximity Patch
-cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git && git cherry-pick 5e8f94a2db8c0a026f72b99c988b0cfdd64716e2 && cd ../..
+cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git -b rice && git cherry-pick 198b3fa983482e67cc10f91debc72710ee831404 && cd ../..
