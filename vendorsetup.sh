@@ -1,6 +1,6 @@
 echo 'Cloning Vendor tree [1/4]'
 # Vendor Tree
-git clone git@github.com:H1mJT/vendor_realme_RMX1901.git -b 12.1 vendor/realme/RMX1901
+git clone git@github.com:H1mJT/vendor_realme_RMX1901.git -b rice vendor/realme/RMX1901
 
 echo 'Cloning Kernel tree [2/4]'
 # Kernel Tree
