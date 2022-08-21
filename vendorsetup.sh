@@ -8,7 +8,7 @@ git clone git@github.com:H1mJT/kernel_realme_RMX1901.git -b 12.1 kernel/realme/R
 
 echo 'Cloning Neutron Clang [3/4]'
 # Neutron Clang
-git clone --depth=1 https://gitlab.com/dakkshesh07/neutron-clang.git -b Neutron-16 prebuilts/clang/host/linux-x86/clang-neutron
+git clone --depth=1 https://gitlab.com/jjpprrrr/prelude-clang prebuilts/clang/host/linux-x86/clang-prelude
 
 
 echo 'Patching Realme In-Screen Proximity [4/4]'
