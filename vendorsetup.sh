@@ -4,7 +4,7 @@ git clone git@github.com:H1mJT/vendor_realme_RMX1901.git -b rice vendor/realme/R
 
 echo 'Cloning Kernel tree [2/5]'
 # Kernel Tree
-git clone git@github.com:H1mJT/kernel_realme_RMX1901.git -b 12.1 kernel/realme/RMX1901
+git clone git@github.com:H1mJT/kernel_realme_RMX1901.git -b upstream kernel/realme/RMX1901
 
 echo 'Cloning Prelude Clang [3/5]'
 # Prelude Clang
