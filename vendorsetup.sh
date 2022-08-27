@@ -6,9 +6,9 @@ echo 'Cloning Kernel tree [2/5]'
 # Kernel Tree
 git clone git@github.com:H1mJT/kernel_realme_RMX1901.git -b upstream kernel/realme/RMX1901
 
-echo 'Cloning Prelude Clang [3/5]'
-# Prelude Clang
-git clone --depth=1 https://gitlab.com/jjpprrrr/prelude-clang prebuilts/clang/host/linux-x86/clang-prelude
+echo 'Cloning Proton Clang [3/5]'
+# Proton Clang
+git clone --depth=1 https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/clang-proton
 
 
 echo 'Patching Realme In-Screen Proximity [4/5]'
