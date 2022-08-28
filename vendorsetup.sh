@@ -10,12 +10,13 @@ echo 'Cloning Proton Clang [3/5]'
 # Proton Clang
 git clone --depth=1 https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/clang-proton
 
+# Realme Dirac
+echo 'Adding Realme Dirac Support [4/5]'
+git clone https://github.com/techyminati/android_packages_apps_RealmeDirac.git -b lineage-19.1 packages/apps/RealmeDirac
 
-echo 'Patching Realme In-Screen Proximity [4/5]'
+echo 'Patching Realme In-Screen Proximity [5/5]'
 # Realme In-Screen Proximity Patch
 cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git && git cherry-pick de630e735cdbb68a606d3bbbf8b1674be31bab2d && cd ../..
 
-# Realme Dirac
-echo 'Adding Realme Dirac Support [5/5]'
-git clone https://github.com/techyminati/android_packages_apps_RealmeDirac.git -b lineage-19.1 packages/apps/RealmeDirac
+
 
