@@ -454,8 +454,8 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.realme_sdm710
+#PRODUCT_PACKAGES += \
+    #vendor.lineage.touch@1.0-service.realme_sdm710
 
 # # Thermal
 # PRODUCT_PACKAGES += \

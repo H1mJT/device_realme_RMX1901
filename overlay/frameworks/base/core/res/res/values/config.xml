@@ -366,8 +366,6 @@
     <!-- NightLight FOD -->
     <bool name="disable_fod_night_light">true</bool>
     
-    <!-- Whether to show a custom view for FOD -->
-    <bool name="config_needCustomFODView">true</bool>
 
     <!-- Whether to intercept inputs on screen off -->
     <bool name="config_enableKeyHandler">true</bool>

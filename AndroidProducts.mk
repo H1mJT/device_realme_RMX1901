@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_RMX1901.mk
+    $(LOCAL_DIR)/corvus_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_RMX1901-userdebug \
-    spark_RMX1901-eng
+    corvus_RMX1901-userdebug \
+    corvus_RMX1901-eng
